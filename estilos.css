@@ -1,0 +1,315 @@
+*{margin:0;
+padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #484848;
+    font-family: 'Alegreya', serif !important;
+    color: #ffffff;
+    background-image: url("img/FondoDePantallaMobile_Mesa\ de\ trabajo\ 1.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    margin: 2em auto 0;
+    width: 90%;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight:400 ;
+}
+
+header, footer{
+    background-color: #484848;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 + div{
+    margin:3em auto 0;
+    width: 50%;
+}
+
+aside{
+    display: none;
+    justify-content: space-between;
+}
+
+aside button{
+    width: 40%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Alegreya', serif;
+    cursor: pointer;
+}
+aside button:nth-of-type(1){
+   background-color: #DA3925;
+}
+aside button:nth-of-type(2){
+   background-color: #7BCE72;
+}
+
+#backModal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #484848;
+}
+
+#contenedorPregunta{
+    width: 70%;
+    background-color: #F4F4F4;
+    position:fixed;
+    height: 50vh;
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+#popUPAdvertencia{
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#popUPAdvertencia article{
+    width: 65%;
+    background-color: #F4F4F4;
+    height: 25vh;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: #484848;
+}
+#popUPAdvertencia div{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#popUPAdvertencia div button{
+    width: 40%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Alegreya', serif;
+    cursor: pointer;
+}
+
+#contador{
+    top: 15%;
+    z-index: 2;
+    width: 25%;
+    background-color: #F4F4F4;
+    padding:0.5em;
+    border-radius: 10px;
+}
+
+
+#comenzarQuiz{
+    display: block;
+    margin: 0 auto;
+    border-radius: 11px;
+    color: #484848;
+    background-color: #FDCA40;
+    padding: 0.5em 1.5em;
+    border: none;
+    font-size: 1.45em;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Alegreya', serif;
+    cursor : pointer;
+}
+
+h3, h2{
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.3em;
+    margin: 0 auto 0.5em;
+}
+h3{
+    font-size: 1.3em;
+}
+
+#contenedorPregunta input[type="button"]{
+    font-size: 1em;
+    padding: 0.5em 0em;
+    width: 50%;
+    margin: 0.8em auto 0;
+    border: none;  
+    color: #ffffff;
+    background-color: #484848;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Alegreya', serif;
+    display: block;
+}
+
+#contenedorPregunta p:nth-of-type(1){
+    margin-top: auto;
+}
+
+#contenedorPregunta p{
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#contenedorPregunta p:nth-of-type(2){
+margin-top: 0.5em;
+}
+
+#contador{position: fixed;}
+
+footer{
+    padding-top: 0.5em;
+    margin-top: auto;
+}
+
+
+@media screen and (min-width: 425px){
+        h1{
+            margin: 1.85em auto 0;
+            width: 80%;
+            font-size:1.7em;
+        }
+        #comenzarQuiz{
+            font-size: 1.5em;
+        }
+
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: url("img/FondoPrincipal.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    main{
+        background: linear-gradient(178.8deg, rgb(21 20 20 / 74%) 1.02%, rgba(217, 217, 217, 0) 66.43%);
+    }
+    
+
+    header{
+        background-color: #386150;
+    }
+
+    h1{
+        text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+        font-size: 2.5em;
+        margin: 2em auto 0;
+        width: 75%;
+    }
+
+    #comenzarQuiz{
+        background-color: #4DA167;
+        color: #ffffff;
+    }
+
+    footer{
+        padding-top: 1.5em;
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    h1{
+        font-size: 3.2em;
+        width: 60%;
+    }
+
+    h1 + div{
+        margin:3.5em auto 0;
+    }
+    h3{
+        font-size: 2em;
+    }
+
+    h2{
+        margin-top: 0.5em;
+        font-size: 1.7em;
+    }
+    #popUPAdvertencia article{
+        width: 50%;
+    }
+    #popUPAdvertencia p{
+        margin-top: 1em;
+        font-size: 1.3em;
+    }
+
+    #popUPAdvertencia div button{
+        width: 30%;
+        font-size: 1.2em;
+    }
+
+    #contenedorPregunta input[type="button"]{
+        width: 40%;
+        font-size: 1.2em;
+    }
+
+    #contenedorPregunta p{
+        font-size: 1.15em;
+    }
+    
+}
+
+@media screen and (min-width: 1512px){
+    header, footer{
+        font-size: 1.4em;
+    }
+    h1{
+        font-size: 4em;
+        width: 60%;
+    }
+    h1 + div{
+        margin:4em auto 0;
+    }
+    #comenzarQuiz{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    header, footer{
+        font-size: 1.6em;
+    }
+    h1{
+        font-size: 5em;
+        width: 60%;
+    }
+    h1 + div{
+        margin:4em auto 0;
+    }
+    #comenzarQuiz{
+        font-size: 2em;
+    }
+}
